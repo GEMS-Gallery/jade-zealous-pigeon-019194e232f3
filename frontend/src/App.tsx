@@ -58,7 +58,7 @@ const App: React.FC = () => {
                   <Typography variant="body1" paragraph>
                     {step.description}
                   </Typography>
-                  <Box sx={{ bgcolor: 'grey.100', p: 2, borderRadius: 1, position: 'relative' }}>
+                  <Box sx={{ bgcolor: 'background.paper', p: 2, borderRadius: 1, position: 'relative' }}>
                     <Typography variant="body2" component="pre" sx={{ whiteSpace: 'pre-wrap' }}>
                       {step.prompt}
                     </Typography>
