@@ -1,0 +1,16 @@
+type Result = 
+ variant {
+   err: text;
+   ok: BlogCreationStep;
+ };
+type BlogCreationStep = 
+ record {
+   description: text;
+   id: nat;
+   prompt: text;
+   title: text;
+ };
+service : {
+  getBlogCreationSteps: () -> (vec BlogCreationStep) query;
+  updateBlogCreationStep: (nat, BlogCreationStep) -> (Result);
+}
